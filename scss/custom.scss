@@ -1,0 +1,129 @@
+$main-font: proxima-nova, sans-serif;
+$light: 400;
+$semi-bold: 600;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #fafafa;
+  font-family: $main-font;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.landing-container {
+  display: flex;
+  justify-content: center;
+}
+
+.left-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 100vh;
+  // background-color: pink;
+}
+
+.landing-content {
+  text-align: center;
+
+  h2 {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: $light;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+  }
+}
+
+#ripcurlLogo {
+  width: 50%;
+}
+
+.nav-section {
+  // background-color: rgb(144, 219, 232);
+  display: flex;
+  width: 30%;
+  height: 100vh;
+  align-items: center;
+}
+
+.nav {
+  // background-color: rgb(242, 214, 63);
+  display: flex;
+  align-items: center;
+  position: fixed;
+  height: 30vh;
+  width: 50vh;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: $semi-bold;
+  letter-spacing: 0.2rem;
+
+  ol {
+    list-style: none;
+  }
+
+  a {
+    color: #333;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #b3282d;
+    cursor: pointer;
+  }
+}
+// end of landing page --------------------------------------------------------
+.about-container {
+  height: 100vh;
+  background-color: rgb(181, 197, 255);
+}
+
+.type-container {
+  // background-color: rgb(232, 197, 84);
+  height: 100vh;
+}
+
+.type-left-cont {
+  // background-color: rgb(255, 127, 83);
+  width: 70vw;
+  height: 100vh;
+}
+.type-content {
+  padding: 10%;
+  h1 {
+    text-transform: uppercase;
+    font-weight: $semi-bold;
+    font-size: 1.5rem;
+    letter-spacing: .5rem;
+  }
+  h2 {
+    margin-left: 5%;
+    margin-top: 2%;
+    font-weight: $semi-bold;
+    font-size: 5rem;
+  }
+  #proximaNova {
+    margin-top: 15%;
+  }
+}
