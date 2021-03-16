@@ -1,6 +1,7 @@
 $main-font: proxima-nova, sans-serif;
 $light: 400;
 $semi-bold: 600;
+$rip-curl-red: #b3282d;
 
 html {
   scroll-behavior: smooth;
@@ -32,6 +33,8 @@ p {
 .landing-container {
   display: flex;
   justify-content: center;
+  background-image: url('../img/bg.jpg');
+  background-attachment: fixed;
 }
 
 .left-section {
@@ -86,6 +89,20 @@ p {
   a {
     color: #333;
     text-decoration: none;
+
+    button {
+      position: fixed;
+      bottom: 10px;
+      float: right;
+      left: 93%;
+      max-width: 30px;
+      width: 100%;
+      font-size: 24px;
+      border: none;
+      background-color: none;
+      padding: 0.5px;
+      border-radius: 4px;
+    }
   }
 
   a:hover {
@@ -93,12 +110,37 @@ p {
     cursor: pointer;
   }
 }
-// end of landing page --------------------------------------------------------
+// end of landing page ---------------------------------------------------------
+// start of about section ------------------------------------------------------
 .about-container {
   height: 100vh;
-  background-color: rgb(181, 197, 255);
-}
+  width: 70%;
+  letter-spacing: 0.125rem;
 
+  h1 {
+    padding-top: 7%;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    margin-top: 2%;
+    margin-left: 5%;
+  }
+
+  .about-type {
+    column-count: 2;
+    column-gap: 10px;
+
+    p {
+      font-size: 20px;
+      margin-top: 2%;
+      margin-left: 7%;
+    }
+  }
+}
+// end of about section --------------------------------------------------------
+// start of typography section -------------------------------------------------
 .type-container {
   // background-color: rgb(232, 197, 84);
   height: 100vh;
@@ -109,21 +151,26 @@ p {
   width: 70vw;
   height: 100vh;
 }
+
 .type-content {
   padding: 10%;
+
   h1 {
     text-transform: uppercase;
     font-weight: $semi-bold;
     font-size: 1.5rem;
-    letter-spacing: .5rem;
+    letter-spacing: 0.5rem;
   }
+
   h2 {
     margin-left: 5%;
     margin-top: 2%;
     font-weight: $semi-bold;
     font-size: 5rem;
   }
+
   #proximaNova {
     margin-top: 15%;
   }
 }
+// end of typography section ---------------------------------------------------

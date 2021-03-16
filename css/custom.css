@@ -23,7 +23,9 @@ p {
 
 .landing-container {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  background-image: url("../img/bg.jpg");
+  background-attachment: fixed; }
 
 .left-section {
   display: flex;
@@ -65,13 +67,40 @@ p {
   .nav a {
     color: #333;
     text-decoration: none; }
+    .nav a button {
+      position: fixed;
+      bottom: 10px;
+      float: right;
+      left: 93%;
+      max-width: 30px;
+      width: 100%;
+      font-size: 24px;
+      border: none;
+      background-color: none;
+      padding: 0.5px;
+      border-radius: 4px; }
   .nav a:hover {
     color: #b3282d;
     cursor: pointer; }
 
 .about-container {
   height: 100vh;
-  background-color: #b5c5ff; }
+  width: 70%;
+  letter-spacing: 0.125rem; }
+  .about-container h1 {
+    padding-top: 7%;
+    text-align: center;
+    text-transform: uppercase; }
+  .about-container h2 {
+    margin-top: 2%;
+    margin-left: 5%; }
+  .about-container .about-type {
+    column-count: 2;
+    column-gap: 10px; }
+    .about-container .about-type p {
+      font-size: 20px;
+      margin-top: 2%;
+      margin-left: 7%; }
 
 .type-container {
   height: 100vh; }
@@ -86,7 +115,7 @@ p {
     text-transform: uppercase;
     font-weight: 600;
     font-size: 1.5rem;
-    letter-spacing: .5rem; }
+    letter-spacing: 0.5rem; }
   .type-content h2 {
     margin-left: 5%;
     margin-top: 2%;
