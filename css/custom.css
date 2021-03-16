@@ -6,7 +6,8 @@ body {
   padding: 0;
   width: 100%;
   background-color: #fafafa;
-  font-family: proxima-nova, sans-serif; }
+  font-family: proxima-nova, sans-serif;
+  color: #1E1E1E; }
 
 img {
   width: 100%; }
@@ -41,7 +42,9 @@ p {
     font-size: 1.5rem;
     font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: 0.5rem; }
+    letter-spacing: 0.5rem;
+    color: #fafafa;
+    text-shadow: 2px 2px 3px #333; }
 
 #ripcurlLogo {
   width: 50%; }
@@ -50,11 +53,11 @@ p {
   display: flex;
   width: 30%;
   height: 100vh;
-  align-items: center; }
+  align-items: center;
+  margin-left: 5%; }
 
 .nav {
   display: flex;
-  align-items: center;
   position: fixed;
   height: 30vh;
   width: 50vh;
@@ -63,7 +66,8 @@ p {
   font-weight: 600;
   letter-spacing: 0.2rem; }
   .nav ol {
-    list-style: none; }
+    list-style: none;
+    color: #333; }
   .nav a {
     color: #333;
     text-decoration: none; }
@@ -71,7 +75,7 @@ p {
       position: fixed;
       bottom: 10px;
       float: right;
-      left: 93%;
+      right: 10px;
       max-width: 30px;
       width: 100%;
       font-size: 24px;
@@ -85,7 +89,9 @@ p {
 
 .about-container {
   height: 100vh;
-  width: 70%;
+  margin-left: 5%;
+  padding-top: 5%;
+  width: 60%;
   letter-spacing: 0.125rem; }
   .about-container h1 {
     padding-top: 7%;
@@ -114,14 +120,28 @@ p {
   .type-content h1 {
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1rem;
     letter-spacing: 0.5rem; }
   .type-content h2 {
     margin-left: 5%;
     margin-top: 2%;
     font-weight: 600;
-    font-size: 5rem; }
-  .type-content #proximaNova {
-    margin-top: 15%; }
+    font-size: 3rem; }
+  .type-content #proximaNovaBold {
+    font-weight: 600;
+    margin-top: 12%; }
+  .type-content #proximaNovaLight {
+    font-weight: 400;
+    margin-top: 12%; }
+  .type-content #lightExample {
+    font-weight: 400; }
+  .type-content #boldh2 {
+    font-size: 40px; }
+  .type-content #light {
+    color: #333;
+    text-decoration: underline; }
+  .type-content #lighth3 {
+    font-size: 17px;
+    line-height: 0px; }
 
 /*# sourceMappingURL=custom.css.map */

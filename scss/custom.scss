@@ -2,6 +2,7 @@ $main-font: proxima-nova, sans-serif;
 $light: 400;
 $semi-bold: 600;
 $rip-curl-red: #b3282d;
+$rip-curl-black: #1E1E1E;
 
 html {
   scroll-behavior: smooth;
@@ -13,6 +14,7 @@ body {
   width: 100%;
   background-color: #fafafa;
   font-family: $main-font;
+  color: $rip-curl-black;
 }
 
 img {
@@ -35,6 +37,7 @@ p {
   justify-content: center;
   background-image: url('../img/bg.jpg');
   background-attachment: fixed;
+
 }
 
 .left-section {
@@ -55,6 +58,8 @@ p {
     font-weight: $light;
     text-transform: uppercase;
     letter-spacing: 0.5rem;
+    color: #fafafa;
+    text-shadow: 2px 2px 3px #333 ;
   }
 }
 
@@ -68,12 +73,12 @@ p {
   width: 30%;
   height: 100vh;
   align-items: center;
+  margin-left: 5%;
 }
 
 .nav {
   // background-color: rgb(242, 214, 63);
   display: flex;
-  align-items: center;
   position: fixed;
   height: 30vh;
   width: 50vh;
@@ -81,9 +86,9 @@ p {
   font-size: 2.5rem;
   font-weight: $semi-bold;
   letter-spacing: 0.2rem;
-
   ol {
     list-style: none;
+    color: #333;
   }
 
   a {
@@ -94,7 +99,7 @@ p {
       position: fixed;
       bottom: 10px;
       float: right;
-      left: 93%;
+      right: 10px;
       max-width: 30px;
       width: 100%;
       font-size: 24px;
@@ -106,7 +111,7 @@ p {
   }
 
   a:hover {
-    color: #b3282d;
+    color: $rip-curl-red;
     cursor: pointer;
   }
 }
@@ -114,7 +119,9 @@ p {
 // start of about section ------------------------------------------------------
 .about-container {
   height: 100vh;
-  width: 70%;
+  margin-left: 5%;
+  padding-top: 5%;
+  width: 60%;
   letter-spacing: 0.125rem;
 
   h1 {
@@ -158,7 +165,7 @@ p {
   h1 {
     text-transform: uppercase;
     font-weight: $semi-bold;
-    font-size: 1.5rem;
+    font-size: 1rem;
     letter-spacing: 0.5rem;
   }
 
@@ -166,11 +173,31 @@ p {
     margin-left: 5%;
     margin-top: 2%;
     font-weight: $semi-bold;
-    font-size: 5rem;
+    font-size: 3rem;
   }
 
-  #proximaNova {
-    margin-top: 15%;
+  #proximaNovaBold {
+    font-weight: $semi-bold;
+    margin-top: 12%;
+  }
+  #proximaNovaLight {
+    font-weight: $light;
+    margin-top: 12%;
+  }
+  #lightExample {
+    font-weight: $light;
+  }
+  #boldh2 {
+    font-size: 40px;
+
+  }
+  #light {
+    color: #333;
+    text-decoration: underline;
+  }
+  #lighth3 {
+    font-size: 17px;
+    line-height: 0px;
   }
 }
 // end of typography section ---------------------------------------------------
